@@ -63,11 +63,6 @@ const music_list = [
 
     // },
 
-
-
-
-
-
     // {
     //     img : 'assets/img/mickeyjoel2gifoptimize.gif',
     //     name : 'Mickey-Joell',
@@ -88,14 +83,7 @@ const music_list = [
     //     artist : 'Alma Negra',
     //     music : 'assets/music/dariel-almanegra.mp3'
     // },
-    
-    
 
-    
-
-
-
-    
     // {
     //     img : 'assets/img/Royal.png',
     //     name : 'Royal Flush',
@@ -131,8 +119,6 @@ const music_list = [
     //     video : 'assets/videos/KulosoEdit.mp4'
     // },
 
-
-
     {
         img : 'assets/img/posters/bookertcom.webp',
         name : 'BookerT',
@@ -141,25 +127,19 @@ const music_list = [
         video : 'assets/videos/BookerTcom.mp4'
     },
 
-
-
-
-
-
-
     {
         img : 'assets/img/biggestfan.png',
         name : 'Biggest Fan',
         artist : 'Vybz Kartel',
         music : 'assets/music/biggestfan.mp3'
     },
-    
+
     {
         img : 'assets/img/compro.png',
         name : 'Compromise',
         artist : 'Fireboy',
         music : 'assets/music/compromise.mp3'
-        
+
     },
     {
         img : 'assets/img/freefromdesire.png',
@@ -175,7 +155,7 @@ const music_list = [
         music : 'assets/music/freemind.mp3'
 
     },
-    
+
     {
         img : 'assets/img/oneandonly.png',
         name : 'One and Only',
@@ -189,51 +169,13 @@ const music_list = [
     //     artist : 'Tengo Un Flow',
     //     music : 'assets/music/UnFlowZaza.mp3'
     // },
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     {
         img : 'assets/img/Cirujano1.png',
         name : 'Cirujano Noturno',
         artist : 'Hip Hop',
         music : 'assets/music/cirujanohiphop.mp3'
-        
+
     },
 
     {
@@ -241,80 +183,80 @@ const music_list = [
         name : 'Cirujano Noturno',
         artist : 'En la Esquina',
         music : 'assets/music/cirujanoencualquieresquina.mp3'
-        
+
     },
     {
         img : 'assets/img/Cirujano1.png',
         name : 'Cirujano Noturno',
         artist : 'Rap Por $$$',
         music : 'assets/music/cirujanorappordinero.mp3'
-        
+
     },
     {
         img : 'assets/img/Cirujano1.png',
         name : 'Cirujano Noturno',
         artist : 'Home Run',
         music : 'assets/music/cirujanohomerun.mp3'
-        
+
     },
     {
         img : 'assets/img/Cirujano1.png',
         name : 'Cirujano Noturno',
         artist : 'Plomo Por Pila',
         music : 'assets/music/cirujanoplomoporpila.mp3'
-        
+
     },
     {
         img : 'assets/img/Cirujano1.png',
         name : 'Cirujano Noturno',
         artist : 'Un *** en tu Tinaco',
         music : 'assets/music/cirujanounmuertopicaoentutinaco.mp3'
-        
+
     },
     {
         img : 'assets/img/Cirujano1.png',
         name : 'Cirujano Noturno',
         artist : 'Quieren Problema',
         music : 'assets/music/cirujanosiquierenproblema.mp3'
-        
+
     },
     {
         img : 'assets/img/Cirujano1.png',
         name : 'Cirujano Noturno',
         artist : '#Bars',
         music : 'assets/music/Cirujano2.mp3'
-        
+
     },
     {
         img : 'assets/img/Cirujano1.png',
         name : 'Cirujano Noturno',
         artist : 'Eh Eh Eh',
         music : 'assets/music/Cirujano4.mp3'
-        
+
     },
     {
         img : 'assets/img/Cirujano1.png',
         name : 'Cirujano Noturno',
         artist : 'Cojelo Eazy',
         music : 'assets/music/Cirujano5.mp3'
-        
+
     },
     {
         img : 'assets/img/Cirujano1.png',
         name : 'Cirujano Noturno',
         artist : 'Rap Puro',
         music : 'assets/music/Cirujano3.mp3'
-        
+
     },
-    
+
     // {
     //     img : 'assets/img/essence.png',
     //     name : 'Essence',
     //     artist : 'Essence',
     //     music : 'assets/music/essence.mp3'
-        
+
     // },
-   
+
     // {
     //     img : 'assets/img/Lastlast.png',
     //     name : 'For My Hand',
@@ -322,7 +264,7 @@ const music_list = [
     //     music : 'assets/music/formyhand.mp3'
 
     // },
-    
+
     // {
     //     img : 'assets/img/soundgasm.png',
     //     name : 'Soundgasm',
@@ -338,7 +280,6 @@ const music_list = [
 
     // },
 
-
     // {
     //     img : 'assets/img/migos3rd.png',
     //     name : 'Casper',
@@ -347,13 +288,6 @@ const music_list = [
 
     // },
 
-
-
-
-
-
-
-    
     // {
     //     img : 'assets/img/ChoppaHate.png',
     //     name : 'Choppa Hate',
@@ -368,7 +302,7 @@ const music_list = [
     //     music : 'assets/music/dior.mp3'
 
     // },
-    
+
     // {
     //     img : 'assets/img/Gunna2.png',
     //     name : 'Gunna',
@@ -419,42 +353,14 @@ const music_list = [
 
     // },
 
-
-
-
-
-    
-
-
-
-
     // {
     //     img : 'assets/img/codigosvid.gif',
     //     name : 'Nory Dolla',
     //     artist : 'Codigos',
     //     music : 'assets/music/Nory-Codigos.mp3'
     // },
-    
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ];
-
-
 
 loadTrack(track_index);
 
@@ -474,20 +380,11 @@ function loadTrack(track_index){
 
     curr_track.addEventListener('ended', nextTrack);
 
-
-
     // random_bg_color();
 
     updateBackgroundImage();
 
-
-
-    
 }
-
-
-
-
 
 // function random_bg_color(){
 //     let hex = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e'];
@@ -507,17 +404,10 @@ function loadTrack(track_index){
 
 //     let gradient = 'linear-gradient(' + angle + ',' + Color1 + ', ' + Color2 + ")";
 
-
-    
-
 //     document.body.style.background = gradient;
-    
+
 //     document.querySelector('.wrapper').style.background = gradient;
 // }
-
-
-
-
 
 // Background of the Music popup:
 // - song with a "video" (.mp4 / .webm) -> the video plays muted on a loop
@@ -560,15 +450,6 @@ if (ipodModal) {
     new MutationObserver(playBackgroundVideo)
         .observe(ipodModal, { attributes: true, attributeFilter: ['class'] });
 }
-
-
-
-
-
-
-
-
-
 
 function reset(){
     curr_time.textContent = "00:00";
@@ -656,9 +537,3 @@ function setUpdate(){
         total_duration.textContent = durationMinutes + ":" + durationSeconds;
     }
 }
-
-
-
-
-
-

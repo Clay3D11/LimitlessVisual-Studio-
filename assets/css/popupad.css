@@ -20,6 +20,15 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+#popup.popup.is-open {
+  display: block;
+}
+
+/* The page behind stays put while the popup is open */
+html:has(#popup.is-open) {
+  overflow: hidden;
+}
+
 #popup .popup-content {
   margin: 15% auto;
   padding: 20px;
@@ -30,6 +39,9 @@
 }
 
 #popup .close {
+  padding: 0;
+  border: 0;
+  background: none;
   color: #ff0000;
   float: right;
   font-size: 38px;
@@ -109,6 +121,7 @@
 #popup .shadow__btn {
   display: block;
   position: relative;
+  width: fit-content;
   margin: auto;
   padding: 10px 20px;
   border: none;
@@ -119,7 +132,9 @@
   font-size: 17px;
   font-weight: 700;
   letter-spacing: 4px;
+  text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
   transition: box-shadow 0.5s;
 }
 
