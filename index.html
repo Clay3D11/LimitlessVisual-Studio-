@@ -22,6 +22,8 @@
 
   <!-- Nav mini player (Kulosa, from famelz.com) -->
   <link rel="stylesheet" href="assets/css/navplayer.css">
+  <!-- Instagram nav button (from limitlessmusic.official) -->
+  <link rel="stylesheet" href="assets/css/igbutton.css">
 </head>
 <body>
 
@@ -41,8 +43,12 @@
       </div>
       <a href="#projects">Projects</a>
       <a href="#services">Services</a>
+      <a href="#process">Process</a>
       <a href="https://limitlessvisual.com/#pricing">Pricing</a>
       <a href="#contact">Contact</a>
+
+      <!-- Instagram button (from limitlessmusic.official) — add the profile link in href -->
+      <a class="ig-btn" href="https://www.instagram.com/universallimitless/followers/mutualOnly?__pwa=1" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
 
       <span class="nav-player-sep" aria-hidden="true">|</span>
 
@@ -207,13 +213,13 @@
 
     <section id="projects" class="section projects">
       <div class="section-heading reveal">
-        <p class="eyebrow">Selected edits</p>
-        <h2>Limitless Studio</h2> 
+        <p class="logo">Projects</p>
+        <h2 class="eyebrow">Limitless Studio</h2> 
         <p>Cinematic videos - Ads - Motion Graphics.</p>
       </div>
 
       <figure class="featured-video reveal">
-        <video src="assets/videos/mickeyjoell.mp4" poster="assets/img/posters/mickeyjoell.webp" controls data-autoplay loop muted playsinline preload="none"></video>
+        <video src="assets/videos/Alofoke1.mp4" poster="assets/img/posters/mickeyjoell.webp" controls data-autoplay loop muted playsinline preload="none"></video>
         <figcaption><span class="eyebrow">Featured edit</span> Mickey &times; Joell</figcaption>
       </figure>
 
@@ -224,17 +230,19 @@
 
     <section id="services" class="section services">
       <div class="section-heading reveal">
-        <p class="eyebrow">Services</p>
-        <h2 class="logo" >Built for Creators, Artists, and Brands.</h2>
+        <p class="logo">Services</p>
+        <h2 class="eyebrow" >Built for Creators, Artists, and Brands.</h2>
       </div>
 
       <div class="service-grid">
         <article class="service reveal" data-num="01">
           <svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
           <h3>Music Videos</h3>
-          <p>Rhythm-driven cuts, animated accents, and visual pacing that follows the track.</p>
+          <!-- <p>Rhythm-driven cuts, animated accents, and visual pacing that follows the track.</p> -->
 
           <ul>
+            <li>Special Effects</li>
+            <li>Visual Effects</li>
             <li>Beat-synced cuts</li>
             <li>Color grading</li>
             <li>VFX &amp; transitions</li>
@@ -247,7 +255,7 @@
         <article class="service reveal" data-num="02">
           <svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11v2a1 1 0 0 0 1 1h3l5 4V6L7 10H4a1 1 0 0 0-1 1z"/><path d="M16 8.5a5 5 0 0 1 0 7M19 5.5a9 9 0 0 1 0 13"/></svg>
           <h3>Promo Ads</h3>
-          <p>Quick edits for campaigns, releases, services, and product-style reels.</p>
+          <!-- <p>Quick edits for campaigns, releases, services, and product-style reels.</p> -->
 
           <ul>
             <li>Social-first formats</li>
@@ -261,13 +269,14 @@
         <article class="service reveal" data-num="03">
           <svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>
           <h3>Motion Graphics</h3>
-          <p>Glitch, typography, overlays, transitions, and cinematic texture packs.</p>
+          <!-- <p>Glitch, typography, overlays, transitions, and cinematic texture packs.</p> -->
 
           <ul>
-            <li>Animated titles</li>
-            <li>Glitch &amp; light FX</li>
-            <li>Overlay packs</li>
-            <li>Special Effects</li>
+            <li>Release-Ready</li>
+            <li>Raw Clips</li>
+            <li>Final Cut</li>
+            <li>Design &amp; Mixing</li>
+            <li>Captions &amp; Subtitles</li>
           
           </ul>
         
@@ -277,16 +286,60 @@
         <article class="service reveal" data-num="04">
           <svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.1 15.9M14.5 14.5L20 20M8.1 8.1L12 12"/></svg>
           <h3>Pro Editing</h3>
-          <p>Send the raw footage. Get back a polished, release-ready cut built to stop the scroll.</p>
+          <!-- <p>Send the raw footage. Get back a polished, release-ready cut built to stop the scroll.</p> -->
 
           <ul>
-            <li>Raw clips to final cut</li>
-            <li>Sound design &amp; mixing</li>
-            <li>Captions &amp; subtitles</li>
-            <li>Every platform format</li>
+            
+            
+
+            <li>Animated titles</li>
+            <li>Typography</li>
+            <li>Transitions</li>
+            <li>Cinematic Textture</li>
+            <li>Glitch &amp; light FX</li>
+            <li>Overlay packs</li>
+            <li>Special Effects</li>
+
           </ul>
         </article>
       </div>
+    </section>
+
+    <!-- Animated arrow flowing from services into process -->
+    <div class="flow-divider" aria-hidden="true"><span></span></div>
+
+    <!-- ============ Process ============ -->
+    <section class="section process-section" id="process">
+      <div class="section-heading reveal">
+        <p class="logo">Process</p>
+        <h2 class="eyebrow">From concept to final export.</h2>
+      </div>
+      <ol class="card-grid process-grid">
+        <li class="process-card reveal">
+          <span class="card-index">01</span>
+          <h3>Plan The Visual</h3>
+          <div class="service-guarantees"><span>Outline</span><span>Notes</span></div>
+          <ul class="check-list"><li>Define the audience</li><li>Choose Style</li><li>Shape the story</li><li>Organize the selects</li><li>Visualize the Scene</li><li>Set the visual mood</li></ul>
+        </li>
+        <li class="process-card reveal">
+          <span class="card-index">02</span>
+          <h3>Shoot &amp; Edit</h3>
+          <div class="service-guarantees"><span>Footage</span><span>Editing</span></div>
+          <ul class="check-list"><li>Capture footage</li><li>Build the pacing</li><li>Add VFX & SVF</li><li>Transitions</li><li>Color Grading</li><li>Motion & Titles</li></ul>
+        </li>
+        <li class="process-card reveal">
+          <span class="card-index">03</span>
+          <h3>Polish &amp; Deliver</h3>
+          <div class="service-guarantees"><span>Timing</span><span>Fast delivery</span></div>
+          <ul class="check-list"><li>Color &amp; sound</li><li>Motion &amp; titles</li><li>Revision pass</li><li>Final export</li></ul>
+        </li>
+        <li class="process-card reveal">
+          <span class="card-index">04</span>
+          <h3>Launch the visual</h3>
+          <div class="service-guarantees"><span>Publish</span><span>Promote</span></div>
+          <ul class="check-list"><li>Download Export</li><li>Receive Material</li><li>Review finish</li><li>Publish &amp; Promote</li></ul>
+        </li>
+      </ol>
     </section>
 
     <section id="contact" class="section contact">
@@ -322,6 +375,7 @@
         <a href="videoshowcase.html">Showcase2</a>
         <a href="#projects">Projects</a>
         <a href="#services">Services</a>
+        <a href="#process">Process</a>
       </nav>
       <div class="footer-col">
         <h3>Contact</h3>

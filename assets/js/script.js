@@ -57,8 +57,9 @@ const categories = { music: "Shorts", ads: "Ads", art: "Visual Art", motion: "Mo
 
 const works = [
   
-  ["Alofoke1.mp4", "Alofoke", "music", "Atmospheric music visual with warm glow and texture.", "t", "1:16"],
-  ["BookerTcom.mp4", "Bad B & BookerT", "music", "Cinematic visual with dramatic contrast and light play.", "t", "0:33"],
+  // ["Alofoke1.mp4", "Alofoke", "music", "Atmospheric music visual with warm glow and texture.", "w", "1:16"],
+
+  ["BookerTcom.mp4", "Bad B & BookerT", "music", "Cinematic visual with dramatic contrast and light play.", "w", "0:33"],
 
 
 

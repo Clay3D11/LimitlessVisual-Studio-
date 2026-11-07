@@ -1,0 +1,36 @@
+/* ==========================================================
+   Instagram nav button (glowing icon).
+   Copied from limitlessmusic.official(Updated) — the fixed IG
+   link styled by `.topnav a` in css/navbtn.css. Here it sits in
+   the nav next to Contact instead of floating on the right.
+   ========================================================== */
+
+.nav-links a.ig-btn {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1;
+  text-shadow: 0 0 20px #00fffb, 0 0 40px #001aff;
+}
+
+.nav-links a.ig-btn:hover {
+  color: #ffffff;
+  text-shadow: 0 0 20px #ff0606, 0 0 40px #0400ff;
+}
+
+/* Tablets: a little smaller so every nav item stays on one line */
+@media (min-width: 641px) and (max-width: 900px) {
+  .nav-links a.ig-btn {
+    font-size: 26px;
+  }
+}
+
+/* Phones: its own row in the open menu, right below Contact */
+@media (max-width: 640px) {
+  .nav-links a.ig-btn {
+    font-size: 30px;
+    text-align: left;
+  }
+}
