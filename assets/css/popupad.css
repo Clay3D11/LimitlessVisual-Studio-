@@ -1,0 +1,131 @@
+/* ==========================================================
+   Pop up AD for visiting users.
+   Copied from limitlessmusic.official(Updated):
+   css/popup.css, the .marquee/.marquee__group2 rules from
+   css/lettermarquee.css, .shadow__btn from css/allbutton.css
+   and .title from style.css. Scoped to #popup so the generic
+   class names never touch the rest of the site.
+   ========================================================== */
+
+/* ---------- Overlay + panel (popup.css) ---------- */
+#popup.popup {
+  display: none; /* Hidden by default, shown by popupad.js */
+  position: fixed;
+  z-index: 1001; /* above the header and quick dock */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#popup .popup-content {
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#popup .close {
+  color: #ff0000;
+  float: right;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+#popup .close:hover,
+#popup .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ---------- Titles (style.css) ---------- */
+#popup .title {
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Times New Roman', serif;
+  text-shadow: 0 0 5px #00fffb, 0 0 10px #0081bc;
+}
+
+/* ---------- Letters marquee (lettermarquee.css) ---------- */
+#popup .marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 1.5rem;
+}
+
+#popup .marquee:hover {
+  -webkit-text-stroke: 1.5px #fff;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  transition: all 0.5s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0 0 15px #00fffb, 0 0 15px #0081bc;
+}
+
+#popup .marquee__group2 {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  min-width: 100%;
+  animation: popup-marquee-scroll 8s linear infinite;
+}
+
+#popup .marquee__group2 span {
+  color: #ffffff;
+  font-size: 2vw;
+  font-weight: 800;
+  white-space: nowrap;
+  font-family: "Syne", sans-serif;
+  text-shadow: 0 0 20px #06a4ff, 0 0 40px #00ccff;
+}
+
+@keyframes popup-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 2rem));
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  #popup .marquee__group2 span {
+    font-size: 11.5vw;
+  }
+}
+
+/* ---------- Glow buttons (allbutton.css) ---------- */
+#popup .shadow__btn {
+  display: block;
+  position: relative;
+  margin: auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  background: rgba(0, 140, 255, 0);
+  box-shadow: 0 0 25px rgb(0, 140, 255);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  transition: box-shadow 0.5s;
+}
+
+#popup .shadow__btn:hover {
+  box-shadow: 0 0 5px rgb(0, 140, 255),
+              0 0 25px rgb(0, 140, 255),
+              0 0 50px rgb(0, 140, 255),
+              0 0 100px rgb(0, 140, 255);
+}

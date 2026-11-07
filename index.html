@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="assets/css/navplayer.css">
   <!-- Instagram nav button (from limitlessmusic.official) -->
   <link rel="stylesheet" href="assets/css/igbutton.css">
+  <!-- Pop up AD for visiting user (from limitlessmusic.official) -->
+  <link rel="stylesheet" href="assets/css/popupad.css">
 </head>
 <body>
 
@@ -527,6 +529,57 @@
     </div>
   </div>
 
+  <!-- Pop up AD for visiting user (from limitlessmusic.official) -->
+  <div class="popup" id="popup">
+    <div class="popup-content" style="background-image: url(./assets/img/nobg/10.png); background-position: center; background-size: cover; border-color: transparent;">
+
+      <span class="close" id="close">&times;</span>
+
+      <h2 class="title">Limitless Studio</h2>
+
+      <!-- <h1 class="title">Marketing/Streaming</h1> -->
+
+      <!-- Letters marquee -->
+      <div class="marquee">
+        <div class="marquee__group2">
+          <span>Urban ⨝</span>
+          <span>Rap ⨝ HipHop ⨝</span>
+          <span>Dembow ⨝ Bachata ⨝</span>
+        </div>
+        <div class="marquee__group2" aria-hidden="true">
+          <span>Urban ⨝</span>
+          <span>Rap ⨝ HipHop ⨝</span>
+          <span>Dembow ⨝ Bachata ⨝</span>
+        </div>
+      </div>
+
+      <br>
+
+      <!-- <button class="popupmarkettingbtn shadow__btn title" style="font-size: 20px; font-weight: 700; color: rgb(255, 255, 255); cursor: pointer; padding: 10px;">
+        $19.99 / mon <br> Streaming
+      </button> -->
+
+      <br>
+
+      <div class="popupmarkettingbtn">
+        <ul class="h2" style="font-size: 20px; font-weight: 600; list-style-type: none;">
+          <!-- <li>Songs</li>
+          <li>Albums</li>
+          <li>Videos</li> -->
+        </ul>
+      </div>
+
+      <a href="https://ko-fi.com/devs_support">
+        <button class="popupmarkettingbtn shadow__btn title" style="color: rgb(255, 255, 255); font-size: 20px;">
+          Support Project
+        </button>
+      </a>
+
+      <p class="title" style="font-weight: 700; color: white;">Thank you!</p>
+
+    </div>
+  </div>
+
   <script src="assets/js/script.js"></script>
 
   <!-- Music player + popups / quick dock -->
@@ -535,5 +588,8 @@
 
   <!-- Nav mini player (loads after ipodstyle.js so only one song plays at a time) -->
   <script src="assets/js/navplayer.js"></script>
+
+  <!-- Pop up AD for visiting user -->
+  <script src="assets/js/popupad.js"></script>
 </body>
 </html>
