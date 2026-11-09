@@ -1,4 +1,4 @@
-// Nav mini player: plays "Kulosa" (Oxlade) when the page opens on desktop,
+// Nav mini player: plays "Mickey Then" (Rulay) when the page opens on desktop,
 // round GIF button toggles play / pause.
 // Copied from famelz.com (js/firstautoplaybtn.js), cleaned up.
 
@@ -12,7 +12,7 @@ if (navAudio && navPlayBtn) {
   const showState = () => {
     const playing = !navAudio.paused;
     navPlayBtn.textContent = playing ? '❚❚' : '▶';
-    navPlayBtn.setAttribute('aria-label', playing ? 'Pause Kulosa' : 'Play Kulosa');
+    navPlayBtn.setAttribute('aria-label', playing ? 'Pause Mickey Then' : 'Play Mickey Then');
   };
 
   navAudio.addEventListener('play', showState);

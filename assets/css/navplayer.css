@@ -37,12 +37,12 @@
   text-transform: uppercase;
   transform: rotateX(0) rotateY(-25deg);
   text-shadow:
-    0 0 5px #fff,
-    0 0 10px #fff,
-    0 0 15px #fff,
+    /* 0 0 5px #fff, */
+    /* 0 0 10px #fff, */
+    /* 0 0 15px #fff, */
     0 0 20px #228dff,
     0 0 35px #228dff,
-    0 0 40px #228dff;
+    0 0 10px #228dff;
 }
 
 /* Round button with the looping GIF */
@@ -55,7 +55,7 @@
   margin: 0 auto;
   border: none;
   border-radius: 50%;
-  background-image: url(../img/gif/15.gif);
+  background-image: url(../img/gif/mickeygifoptimize.gif);
   background-size: cover;
   color: white;
   font-size: 1rem;

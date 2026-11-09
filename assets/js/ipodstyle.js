@@ -41,6 +41,91 @@ let updateTimer;
 //       video  : 'assets/videos/KulosoEdit.mp4'
 //   },
 const music_list = [
+    {
+        img : 'assets/img/posters/alofoke1.webp',
+        name : 'Alofoke',
+        artist : 'El Sultan',
+        music : 'assets/music/Alofoke1.mp3',
+        video : 'assets/videos/Alofoke1.mp4'
+    },
+
+    {
+        img : 'assets/img/posters/bookertcom.webp',
+        name : 'BookerT',
+        artist : 'Bad Bunny & BookerT',
+        music : 'assets/music/BookerT.mp3',
+        video : 'assets/videos/BookerTcom.mp4'
+    },
+
+    {
+        img : 'assets/img/posters/mickey.webp',
+        name : 'Mickey Then',
+        artist : 'Rulay - 24hrs',
+        music : 'assets/music/MickeyRulay.mp3',
+        video : 'assets/videos/mickey.mp4'
+    },
+
+    {
+        img : 'assets/img/posters/mickeyjoell.webp',
+        name : 'Mickey-Joell',
+        artist : 'Rulay - 24hrs',
+        music : 'assets/music/MickeyRulay.mp3',
+        video : 'assets/videos/mickeyjoell.mp4'
+    },
+
+    {
+        img : 'assets/img/posters/dariel30secsvideocompress.webp',
+        name : 'Dariel',
+        artist : 'Alma Negra',
+        music : 'assets/music/dariel-almanegra.mp3',
+        video : 'assets/videos/Dariel30secsVideoCompress.mp4'
+    },
+
+    {
+        img : 'assets/img/posters/clinvidremix1min.webp',
+        name : 'Fatmelz',
+        artist : 'Clin Clin',
+        music : 'assets/music/clinclin.mp3',
+        video : 'assets/videos/Clinvidremix1min.mp4'
+    },
+
+    // {
+    //     img : 'assets/img/biggestfan.png',
+    //     name : 'Biggest Fan',
+    //     artist : 'Vybz Kartel',
+    //     music : 'assets/music/biggestfan.mp3'
+    // },
+
+    // {
+    //     img : 'assets/img/compro.png',
+    //     name : 'Compromise',
+    //     artist : 'Fireboy',
+    //     music : 'assets/music/compromise.mp3'
+
+    // },
+    // {
+    //     img : 'assets/img/freefromdesire.png',
+    //     name : 'Free From Desire',
+    //     artist : 'Calvin Harris',
+    //     music : 'assets/music/freefromdesire.mp3'
+
+    // },
+    // {
+    //     img : 'assets/img/freemind.png',
+    //     name : 'Free Mind',
+    //     artist : 'Tems',
+    //     music : 'assets/music/freemind.mp3'
+
+    // },
+
+    // {
+    //     img : 'assets/img/oneandonly.png',
+    //     name : 'One and Only',
+    //     artist : 'ASE',
+    //     music : 'assets/music/oneandonly.mp3'
+
+    // },
+
     // {
     //     img : 'assets/img/thug11.png',
     //     name : 'With That',
@@ -119,50 +204,6 @@ const music_list = [
     //     video : 'assets/videos/KulosoEdit.mp4'
     // },
 
-    {
-        img : 'assets/img/posters/bookertcom.webp',
-        name : 'BookerT',
-        artist : 'Bad Bunny & BookerT',
-        music : 'assets/music/BookerT.mp3',
-        video : 'assets/videos/BookerTcom.mp4'
-    },
-
-    {
-        img : 'assets/img/biggestfan.png',
-        name : 'Biggest Fan',
-        artist : 'Vybz Kartel',
-        music : 'assets/music/biggestfan.mp3'
-    },
-
-    {
-        img : 'assets/img/compro.png',
-        name : 'Compromise',
-        artist : 'Fireboy',
-        music : 'assets/music/compromise.mp3'
-
-    },
-    {
-        img : 'assets/img/freefromdesire.png',
-        name : 'Free From Desire',
-        artist : 'Calvin Harris',
-        music : 'assets/music/freefromdesire.mp3'
-
-    },
-    {
-        img : 'assets/img/freemind.png',
-        name : 'Free Mind',
-        artist : 'Tems',
-        music : 'assets/music/freemind.mp3'
-
-    },
-
-    {
-        img : 'assets/img/oneandonly.png',
-        name : 'One and Only',
-        artist : 'ASE',
-        music : 'assets/music/oneandonly.mp3'
-
-    },
     // {
     //     img : 'assets/img/UnFlowZaza.gif',
     //     name : 'Fa Melz',
@@ -170,84 +211,84 @@ const music_list = [
     //     music : 'assets/music/UnFlowZaza.mp3'
     // },
 
-    {
-        img : 'assets/img/Cirujano1.png',
-        name : 'Cirujano Noturno',
-        artist : 'Hip Hop',
-        music : 'assets/music/cirujanohiphop.mp3'
+    // {
+    //     img : 'assets/img/Cirujano1.png',
+    //     name : 'Cirujano Noturno',
+    //     artist : 'Hip Hop',
+    //     music : 'assets/music/cirujanohiphop.mp3'
 
-    },
+    // },
 
-    {
-        img : 'assets/img/Cirujano1.png',
-        name : 'Cirujano Noturno',
-        artist : 'En la Esquina',
-        music : 'assets/music/cirujanoencualquieresquina.mp3'
+    // {
+    //     img : 'assets/img/Cirujano1.png',
+    //     name : 'Cirujano Noturno',
+    //     artist : 'En la Esquina',
+    //     music : 'assets/music/cirujanoencualquieresquina.mp3'
 
-    },
-    {
-        img : 'assets/img/Cirujano1.png',
-        name : 'Cirujano Noturno',
-        artist : 'Rap Por $$$',
-        music : 'assets/music/cirujanorappordinero.mp3'
+    // },
+    // {
+    //     img : 'assets/img/Cirujano1.png',
+    //     name : 'Cirujano Noturno',
+    //     artist : 'Rap Por $$$',
+    //     music : 'assets/music/cirujanorappordinero.mp3'
 
-    },
-    {
-        img : 'assets/img/Cirujano1.png',
-        name : 'Cirujano Noturno',
-        artist : 'Home Run',
-        music : 'assets/music/cirujanohomerun.mp3'
+    // },
+    // {
+    //     img : 'assets/img/Cirujano1.png',
+    //     name : 'Cirujano Noturno',
+    //     artist : 'Home Run',
+    //     music : 'assets/music/cirujanohomerun.mp3'
 
-    },
-    {
-        img : 'assets/img/Cirujano1.png',
-        name : 'Cirujano Noturno',
-        artist : 'Plomo Por Pila',
-        music : 'assets/music/cirujanoplomoporpila.mp3'
+    // },
+    // {
+    //     img : 'assets/img/Cirujano1.png',
+    //     name : 'Cirujano Noturno',
+    //     artist : 'Plomo Por Pila',
+    //     music : 'assets/music/cirujanoplomoporpila.mp3'
 
-    },
-    {
-        img : 'assets/img/Cirujano1.png',
-        name : 'Cirujano Noturno',
-        artist : 'Un *** en tu Tinaco',
-        music : 'assets/music/cirujanounmuertopicaoentutinaco.mp3'
+    // },
+    // {
+    //     img : 'assets/img/Cirujano1.png',
+    //     name : 'Cirujano Noturno',
+    //     artist : 'Un *** en tu Tinaco',
+    //     music : 'assets/music/cirujanounmuertopicaoentutinaco.mp3'
 
-    },
-    {
-        img : 'assets/img/Cirujano1.png',
-        name : 'Cirujano Noturno',
-        artist : 'Quieren Problema',
-        music : 'assets/music/cirujanosiquierenproblema.mp3'
+    // },
+    // {
+    //     img : 'assets/img/Cirujano1.png',
+    //     name : 'Cirujano Noturno',
+    //     artist : 'Quieren Problema',
+    //     music : 'assets/music/cirujanosiquierenproblema.mp3'
 
-    },
-    {
-        img : 'assets/img/Cirujano1.png',
-        name : 'Cirujano Noturno',
-        artist : '#Bars',
-        music : 'assets/music/Cirujano2.mp3'
+    // },
+    // {
+    //     img : 'assets/img/Cirujano1.png',
+    //     name : 'Cirujano Noturno',
+    //     artist : '#Bars',
+    //     music : 'assets/music/Cirujano2.mp3'
 
-    },
-    {
-        img : 'assets/img/Cirujano1.png',
-        name : 'Cirujano Noturno',
-        artist : 'Eh Eh Eh',
-        music : 'assets/music/Cirujano4.mp3'
+    // },
+    // {
+    //     img : 'assets/img/Cirujano1.png',
+    //     name : 'Cirujano Noturno',
+    //     artist : 'Eh Eh Eh',
+    //     music : 'assets/music/Cirujano4.mp3'
 
-    },
-    {
-        img : 'assets/img/Cirujano1.png',
-        name : 'Cirujano Noturno',
-        artist : 'Cojelo Eazy',
-        music : 'assets/music/Cirujano5.mp3'
+    // },
+    // {
+    //     img : 'assets/img/Cirujano1.png',
+    //     name : 'Cirujano Noturno',
+    //     artist : 'Cojelo Eazy',
+    //     music : 'assets/music/Cirujano5.mp3'
 
-    },
-    {
-        img : 'assets/img/Cirujano1.png',
-        name : 'Cirujano Noturno',
-        artist : 'Rap Puro',
-        music : 'assets/music/Cirujano3.mp3'
+    // },
+    // {
+    //     img : 'assets/img/Cirujano1.png',
+    //     name : 'Cirujano Noturno',
+    //     artist : 'Rap Puro',
+    //     music : 'assets/music/Cirujano3.mp3'
 
-    },
+    // },
 
     // {
     //     img : 'assets/img/essence.png',
