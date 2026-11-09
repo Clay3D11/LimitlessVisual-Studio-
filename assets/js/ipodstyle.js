@@ -81,13 +81,13 @@ const music_list = [
         video : 'assets/videos/Dariel30secsVideoCompress.mp4'
     },
 
-    {
-        img : 'assets/img/posters/clinvidremix1min.webp',
-        name : 'Fatmelz',
-        artist : 'Clin Clin',
-        music : 'assets/music/clinclin.mp3',
-        video : 'assets/videos/Clinvidremix1min.mp4'
-    },
+    // {
+    //     img : 'assets/img/posters/clinvidremix1min.webp',
+    //     name : 'Fatmelz',
+    //     artist : 'Clin Clin',
+    //     music : 'assets/music/clinclin.mp3',
+    //     video : 'assets/videos/Clinvidremix1min.mp4'
+    // },
 
     // {
     //     img : 'assets/img/biggestfan.png',
