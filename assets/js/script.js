@@ -60,10 +60,13 @@ const works = [
 
   ["BookerTcom.mp4", "Bad B & BookerT", "music", "Cinematic visual with dramatic contrast and light play.", "w", "0:33"],
 
+
   ["mickey.mp4", "Mickey Then", "music", "Music visual cut with clean pacing and stylized motion.", "", "0:24"],
   ["mickeyjoell.mp4", "Mickey Then ft Joell", "music", "Music visual cut with clean pacing and stylized motion.", "", "0:23"],
 
-  ["Superjoell(Preview-7secs).mp4", "Superjoell", "music", "Seven-second teaser with fast visual energy.", "", "0:07"],
+
+
+  // ["Superjoell(Preview-7secs).mp4", "Superjoell", "music", "Seven-second teaser with fast visual energy.", "", "0:07"],
   ["Superjoell(1st).mp4", "Superjoell 1", "music", "Performance-driven sequence with cinematic rhythm.", "", "0:15"],
   ["Superjoell(2nd).mp4", "Superjoell 2", "music", "Alternate music edit with punchy timing.", "", "0:15"],
   ["Superjoell(3rd).mp4", "Superjoell 3", "music", "Stylized cut variation for a stronger visual flow.", "", "0:15"],
