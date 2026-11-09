@@ -12,7 +12,6 @@
 
 # ---- Used by the site ----
 !/assets/img/gif/10.gif
-!/assets/img/gif/mickeygifoptimize.gif
 !/assets/img/gif/mug.gif
 !/assets/img/icons/Blender.png
 !/assets/img/icons/ae.png
@@ -76,3 +75,5 @@
 !/assets/videos/mickey.mp4
 !/assets/videos/mickeyjoell.mp4
 !/assets/videos/transitions.webm
+!/assets/videos/navbtn-mickey.mp4
+!/assets/videos/navbtn-mickey.webm

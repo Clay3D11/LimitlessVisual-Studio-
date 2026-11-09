@@ -4,14 +4,15 @@
 
 const navAudio = document.getElementById('audio');
 const navPlayBtn = document.getElementById('playPauseBtn');
+const navPlayIcon = navPlayBtn && navPlayBtn.querySelector('.play-btn-icon');
 
-if (navAudio && navPlayBtn) {
+if (navAudio && navPlayBtn && navPlayIcon) {
   navAudio.volume = 0.8;
 
   // Button icon always follows the real state of the song
   const showState = () => {
     const playing = !navAudio.paused;
-    navPlayBtn.textContent = playing ? '❚❚' : '▶';
+    navPlayIcon.textContent = playing ? '❚❚' : '▶';
     navPlayBtn.setAttribute('aria-label', playing ? 'Pause Mickey Then' : 'Play Mickey Then');
   };
 
