@@ -42,7 +42,7 @@
           <!-- <a href="videoshowcase.html">Showcase2</a> -->
         </div>
       </div>
-      <a href="#projects">Projects</a>
+      <a href="#projects" data-modal="projectsModal">Projects</a>
       <a href="#services">Services</a>
       <a href="#process">Process</a>
       <a href="https://limitlessvisual.com/#pricing">Pricing</a>
@@ -144,7 +144,7 @@
         <!-- <p class="hero-copy">Cinematic editing, dynamic motion graphics, music visuals, commercial campaigns, and viral-ready social content crafted to make every frame unforgettable.</p> -->
 
         <div class="hero-actions">
-          <a class="button ghost" href="#projects">Projects</a>
+          <a class="button ghost" href="#projects" data-modal="projectsModal">Projects</a>
           <a class="button primary" href="#contact">Contact</a>
         </div>
       </div>
@@ -212,21 +212,20 @@
       </div>
     </section>
 
+    <!-- Projects: one compact card; the full gallery opens in the Projects popup (#projectsModal) -->
     <section id="projects" class="section projects">
-      <div class="section-heading reveal">
-        <p class="logo">Projects</p>
-        <h2 class="eyebrow">Limitless Studio</h2>
-        <p>Cinematic videos - Ads - Motion Graphics.</p>
-      </div>
-
-      <figure class="featured-video reveal">
-        <video src="assets/videos/Alofoke1.mp4" poster="assets/img/posters/alofoke1.webp" controls data-autoplay loop muted playsinline preload="none"></video>
-        <figcaption><span class="eyebrow">Featured edit</span> Alofoke</figcaption>
-      </figure>
-
-      <!-- Filters and tiles are generated from the `works` list in assets/js/script.js -->
-      <div class="filters reveal" aria-label="Filter the gallery"></div>
-      <div class="gallery"></div>
+      <button type="button" class="projects-launch reveal" data-modal="projectsModal" aria-haspopup="dialog" aria-label="Open the projects gallery">
+        <video class="projects-launch-bg" src="assets/videos/mickey.mp4" poster="assets/img/posters/mickey.webp" data-autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
+        <span class="projects-launch-text">
+          <span class="eyebrow">Selected Work</span>
+          <span class="logo">Projects</span>
+          <span class="projects-launch-copy">Cinematic videos - Ads - Motion Graphics.</span>
+        </span>
+        <span class="projects-launch-cta">
+          <span class="projects-launch-count"><b data-works-count>0</b> edits</span>
+          <span class="projects-launch-open">Open gallery <span aria-hidden="true">&rarr;</span></span>
+        </span>
+      </button>
     </section>
 
     <section id="services" class="section services">
@@ -348,7 +347,7 @@
         </ul>
         <div class="hero-actions">
           <a class="button neon" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=v.clainer11@gmail.com&amp;su=Limitless%20Studio%20Project" target="_blank" rel="noopener">Contact Editor</a>
-          <a class="button ghost" href="#projects">See the work</a>
+          <a class="button ghost" href="#projects" data-modal="projectsModal">See the work</a>
         </div>
         <a class="contact-email" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=v.clainer11@gmail.com&amp;su=Limitless%20Studio%20Project" target="_blank" rel="noopener">v.clainer11@gmail.com</a>
       </div>
@@ -365,7 +364,7 @@
         <h3>Explore</h3>
         <a href="#showcase">Showcase</a>
         <a href="videoshowcase.html">Showcase2</a>
-        <a href="#projects">Projects</a>
+        <a href="#projects" data-modal="projectsModal">Projects</a>
         <a href="#services">Services</a>
         <a href="#process">Process</a>
       </nav>
@@ -391,6 +390,27 @@
     </figure>
     <button class="lb-nav" type="button" data-step="1" aria-label="Next video">&rsaquo;</button>
   </dialog>
+
+  <!-- Projects popup: featured edit + filterable gallery (opened by the Projects card and every #projects link) -->
+  <div id="projectsModal" class="modal is-gallery-modal" role="dialog" aria-modal="true" aria-labelledby="projectsTitle">
+    <div class="modal-panel is-gallery">
+      <button type="button" class="modal-close" aria-label="Close">&times;</button>
+      <div class="section-heading">
+        <p class="eyebrow">Selected Work</p>
+        <h2 id="projectsTitle" class="logo">Projects</h2>
+        <p>Cinematic videos - Ads - Motion Graphics.</p>
+      </div>
+
+      <figure class="featured-video">
+        <video src="assets/videos/Alofoke1.mp4" poster="assets/img/posters/alofoke1.webp" controls data-autoplay loop muted playsinline preload="none"></video>
+        <figcaption><span class="eyebrow">Featured edit</span> Alofoke</figcaption>
+      </figure>
+
+      <!-- Filters and tiles are generated from the `works` list in assets/js/script.js -->
+      <div class="filters" aria-label="Filter the gallery"></div>
+      <div class="gallery"></div>
+    </div>
+  </div>
 
   <!-- Store popup -->
   <div id="myModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="storeTitle">

@@ -25,18 +25,25 @@ const popups = [
   { button: 'openModalBtn', modal: 'myModal' },
   { button: 'tickets',      modal: 'ticketsModal' },
   { button: 'ipodmodal',    modal: 'ipodModal' },
+  { button: null,           modal: 'projectsModal' }, // opened by [data-modal="projectsModal"]
 ];
 
-popups.forEach(({ button, modal }) => {
-  const btn = document.getElementById(button);
-  const box = document.getElementById(modal);
-  if (!btn || !box) return;
+function openPopup(box) {
+  box.classList.add('show');
+  setDockOpen(false);
+  if (typeof setMenuOpen === 'function') setMenuOpen(false); // phone nav menu (script.js)
+}
 
-  // Open (and tuck the dock away)
-  btn.addEventListener('click', () => {
-    box.classList.add('show');
-    setDockOpen(false);
-  });
+popups.forEach(({ button, modal }) => {
+  const box = document.getElementById(modal);
+  if (!box) return;
+
+  // Open (and tuck the dock away): the dock button, plus anything marked data-modal="<id>"
+  const openers = [document.getElementById(button), ...document.querySelectorAll(`[data-modal="${modal}"]`)];
+  openers.filter(Boolean).forEach(el => el.addEventListener('click', event => {
+    event.preventDefault();
+    openPopup(box);
+  }));
 
   // Close with the "x", or a link marked data-close (e.g. "Become a partner")
   box.querySelectorAll('.modal-close, [data-close]').forEach(el =>
@@ -51,6 +58,7 @@ popups.forEach(({ button, modal }) => {
 // Escape closes any open popup and the dock
 document.addEventListener('keydown', event => {
   if (event.key !== 'Escape') return;
+  if (document.querySelector('.lightbox[open]')) return; // Escape only closes the video player on top
   popups.forEach(({ modal }) => {
     const box = document.getElementById(modal);
     if (box) box.classList.remove('show');

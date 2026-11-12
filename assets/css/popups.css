@@ -501,8 +501,69 @@
   text-shadow: 0 0 10px rgba(88, 240, 255, 0.8);
 }
 
+/* ==========================================================
+   Projects: featured edit + gallery (tiles styled in style.css)
+   ========================================================== */
+/* Removed from layout while closed, so its videos (data-autoplay)
+   don't download or play until the popup is opened. */
+.modal.is-gallery-modal:not(.show) {
+  display: none;
+}
+
+.modal.is-gallery-modal.show {
+  animation: galleryFade 0.3s ease;
+}
+
+.modal.is-gallery-modal.show .modal-panel {
+  animation: galleryRise 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes galleryFade {
+  from { opacity: 0; }
+}
+
+@keyframes galleryRise {
+  from { transform: translateY(24px) scale(0.98); }
+}
+
+.modal-panel.is-gallery {
+  width: min(1200px, 100%);
+  height: calc(100dvh - 2rem);
+  max-height: none;
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  overscroll-behavior: contain;
+  text-align: left;
+}
+
+.modal-panel.is-gallery .section-heading {
+  margin-bottom: 1.5rem;
+  padding-right: 3rem; /* clear the close button */
+}
+
+.modal-panel.is-gallery .section-heading .eyebrow {
+  margin: 0 0 0.25rem;
+}
+
+.modal-panel.is-gallery .section-heading h2 {
+  margin: 0 0 0.25rem;
+}
+
+.modal-panel.is-gallery .filters {
+  margin: 1.75rem 0 1rem;
+}
+
 /* ---------- Phones ---------- */
 @media (max-width: 480px) {
+  .modal.is-gallery-modal {
+    padding: 0.5rem;
+  }
+
+  .modal-panel.is-gallery {
+    height: calc(100dvh - 1rem);
+    max-height: none;
+    padding: 1.25rem 0.9rem;
+  }
+
   .modal-panel {
     max-height: calc(100dvh - 2rem);
     padding: 2rem 1.25rem 1.25rem;
@@ -538,6 +599,7 @@
   .modal,
   .modal-panel {
     transition: none;
+    animation: none !important;
   }
 
   .player .track-art.rotate {

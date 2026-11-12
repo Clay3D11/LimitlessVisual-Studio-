@@ -39,7 +39,8 @@ if (navDrop.querySelectorAll(".nav-drop-menu a").length > 1) {
   navDrop.classList.add("is-single");
 }
 
-document.querySelectorAll('a[href^="#"]').forEach(link => {
+/* data-modal links open a popup instead of scrolling (assets/js/popupmodals.js) */
+document.querySelectorAll('a[href^="#"]:not([data-modal])').forEach(link => {
   link.addEventListener("click", event => {
     const target = document.querySelector(link.getAttribute("href"));
     if (!target) return;
@@ -117,6 +118,9 @@ gallery.innerHTML = works.map(([file, title, cat, , shape, time], i) => `
   </button>`).join("");
 
 const tiles = [...gallery.children];
+
+/* Edit count on the Projects card */
+document.querySelectorAll("[data-works-count]").forEach(el => (el.textContent = works.length));
 
 const filterOptions = [["all", "All"], ...Object.entries(categories)]
   .map(([key, label]) => [key, label, key === "all" ? works.length : works.filter(work => work[2] === key).length])
